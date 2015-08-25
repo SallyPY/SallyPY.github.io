@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.jumbotron {
+  background: black;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+  border-bottom: 3px solid #577c3e ;
+  text-align: center;
+}
+
+.name{
+  margin-top:50px;
+  display: inline;
+  margin: auto;
+}
+
+.icons .btn {
+  padding-top:20px;
+  color: white;
+  font-size: 17px;
+}
+
+.icons .btn:hover .fa-github:before{
+  color: green;
+  content: "Github";
+  font-size:32px;
+  font-family: "Raleway", sans-serif;
+}
+
+.icons .btn:hover .fa-file-pdf-o:before{
+  color: green;
+  content: "Resume";
+  font-size:32px;
+  font-family: "Raleway", sans-serif;
+}
+
+.icons .btn:hover .fa-envelope:before{
+  color: green;
+  content: "Email";
+  font-size:32px;
+  font-family: "Raleway", sans-serif;
+}
+
+.about {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.about .container a {
+  color: green;
+}
+
+.about h2 {
+    color: #393c3d;
+}
+
+.about p {
+	font-size: 15px;
+}
+
+.about .col-md-9 {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.animationLaptop {
+  text-align: center;
+}
+
+.projects-section {
+    background-color: #252525;
+    border-bottom: 1px solid #577c3e;
+    color:white;
+}
+.projects-section h2 {
+  padding-bottom: 10px;
+}
+
+.projects-section .col-md-4 {
+  text-align: center;
+}
+
+.projects-section p {
+    margin-bottom: 13px;
+    font-size: 15px;
+}
+
+.projects-section .btn {
+  margin-bottom: 30px;
+}
+
+.projects-section a {
+  color: green;
+}
+
+.footer {
+  min-height: 30px;
+  background-color: black;
+}

@@ -1,0 +1,600 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0052)https://www.clippercard.com/ClipperCard/checkout.jsf -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>New Card Order</title>
+	
+
+	<style type="text/css">
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0; 
+	clear: both;
+	visibility: hidden;
+}
+</style>
+	
+	<!-- Migrated Jquery 1.4.4 to 1.8.3. Solves Security Issue: Cross-site scripting (XSS) vulnerability
+	in jQuery before 1.6.3, when using location.hash to select elements, allows remote attackers to inject
+	arbitrary web script or HTML via a crafted tag.	-->
+
+	<script type="text/javascript" src="./New Card Order_files/jquery.min.js"></script><script type="text/javascript" src="./New Card Order_files/swfobject.js.jsf"></script><script type="text/javascript" src="./New Card Order_files/CSJSRequestObject.js.jsf"></script><script type="text/javascript" src="./New Card Order_files/switchcontent.js.jsf"></script><script type="text/javascript" src="./New Card Order_files/switchicon.js.jsf"></script><script type="text/javascript" src="./New Card Order_files/tabcontent.js.jsf"></script><script type="text/javascript" src="./New Card Order_files/helpBox.js.jsf"></script><script type="text/javascript" src="./New Card Order_files/validation.js.jsf"></script><script type="text/javascript" src="./New Card Order_files/checkOut.js.jsf"></script>
+
+	<!-- Migrated Jquery UI 1.8.18 to 1.10.4. Solves Security Issue: Cross-site scripting (XSS)
+	 vulnerability in jquery.ui.dialog.js in the Dialog widget in jQuery UI before 1.10.0 
+	 allows remote attackers to inject arbitrary web script or HTML via the title option.	 -->
+	 
+		<script type="text/javascript" src="./New Card Order_files/jquery-ui.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+			api_gallery=['test1.php?iframe=true&width=600&height=300'];
+			api_titles=['',];
+			api_descriptions=[''];
+		</script>
+	<script language="JavaScript">
+			function transitSwitch(divToShow) {
+				$('div.transitContent').hide();
+				$('#' + divToShow).show(); 
+			}
+
+			function menuChange() {
+				this.style.backgroundColor = "blue"; 
+			}
+
+			$(function(){
+				//break out of frames, if in a frame
+				if (top.location!= self.location) {
+					top.location = self.location.href
+				}
+
+				if(typeof jsf !== 'undefined'){
+					jsf.ajax.addOnEvent(function(data) {
+				        var ajaxstatus = data.status; // Can be "begin", "complete" and "success"
+				        var ajaxloader = document.getElementById("loadingIcon");
+		
+				        switch (ajaxstatus) {
+				            case "begin": // This is called right before ajax request is been sent.
+				                ajaxloader.style.display = 'block';
+				                break;
+		
+				            case "complete": // This is called right after ajax response is received.
+				                ajaxloader.style.display = 'none';
+				                break;
+		
+				            case "success": // This is called when ajax response is successfully processed.
+				                // NOOP.
+				                break;
+				        }
+				    });
+				}
+				transitSwitch('transitContent1');
+			});
+		</script><link type="text/css" rel="stylesheet" href="./New Card Order_files/prettyPhoto.css.jsf"><link type="text/css" rel="stylesheet" href="./New Card Order_files/thickbox.css.jsf"><link type="text/css" rel="stylesheet" href="./New Card Order_files/print2011.css.jsf"><link type="text/css" rel="stylesheet" href="./New Card Order_files/redesign2010.css.jsf"><link type="text/css" rel="stylesheet" href="./New Card Order_files/components.css.jsf"><link type="text/css" rel="stylesheet" href="./New Card Order_files/components2011.css.jsf"><link type="text/css" rel="stylesheet" href="./New Card Order_files/screen.css.jsf"><link type="text/css" rel="stylesheet" href="./New Card Order_files/screen2011.css.jsf"><link type="text/css" rel="stylesheet" href="./New Card Order_files/jquery-ui-1.8.18.custom.css.jsf"><script type="text/javascript" src="./New Card Order_files/jsf.js.jsf"></script><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style><style data-c2c="c2c_print_container_style" media="print" type="text/css">span.skype_c2c_print_container {} span.skype_c2c_container {display:none !important;} .skype_c2c_menu_container {display:none !important;}</style><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/telemetry.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/menu_handler.js"></script></head>
+
+<body id="myClipperPage" class="myClipper orderCard">
+<form id="mainForm" name="mainForm" method="post" action="./New Card Order_files/New Card Order.html" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="mainForm" value="mainForm">
+
+		<div id="container">
+			<div id="wrapper">
+				<div id="header">
+	<script type="text/javascript">
+		$(function(){
+			$("#btnSearch").click(function(){
+				window.location.href = "/ClipperWeb/search.do?searchString=" + $("#searchText").val();
+			});
+		})
+	</script>
+	<div class="header"></div>
+
+
+	<div id="header">
+		<div id="skipto">
+			<a href="https://www.clippercard.com/ClipperCard/checkout.jsf#mainContent" class="skip_nav" accesskey="z">Skip to
+				Content</a>
+		</div>
+		<div id="headerSearch">
+			<label id="searchString" for="searchText">Search</label> <input id="searchText"> <input value="Go" id="btnSearch" class="buttonSearch" style="padding-left: 12px;"><br>
+			<div style="color: red; font-size: .75em; text-align: right; padding-right: 30px;">
+			</div>
+		</div>
+			<div id="logOffBox">
+				Hello,
+				Sally
+				<a href="https://www.clippercard.com/ClipperCard/logout.jsf">Log Out</a>
+			</div>		
+		<h1>
+			<a href="https://www.clippercard.com/ClipperWeb/index.do">Clipper</a>
+		</h1>
+		<ul id="topNav">
+			<li id="home"><a href="https://www.clippercard.com/ClipperWeb/index.do" accesskey="2" title="Home">Home</a></li>
+			<li id="about"><a href="https://www.clippercard.com/ClipperWeb/whatsTranslink.do" accesskey="2" title="About Clipper page">About Clipper</a></li>
+			<li id="use"><a href="https://www.clippercard.com/ClipperWeb/useTranslink.do" accesskey="3" title="How to use Clipper page">Use Clipper</a></li>
+			<li id="get"><a href="https://www.clippercard.com/ClipperWeb/getTranslink.do" accesskey="4" title="How to get Clipper page">Get Clipper</a></li>
+		</ul>
+		<script type="text/javascript">
+
+		$(document).ready(function() {
+		
+		 // toggles the slickbox on clicking the noted link
+		  $('#myclipperModuleRollover').click(function(){
+			  	$("#myBox").slideToggle(150);
+			  	$("#myBox input.login").val("");
+			})
+			
+			$("#myclipperLoggedIn").click(function(){
+				$("#myLoggedInBox").slideToggle(150);
+			});
+
+			//show the correct login/myClipper div
+			if("true" == "true"){
+				$("#myRollover1").hide();
+				$("#myRollover2").show();
+			}
+			else{
+				if("false" == "true"){
+					$("#myRollover1").hide();
+					$("#myRollover2").show();
+				}
+				else{
+					$("#myRollover1").show();
+					$("#myRollover2").hide();					
+				}
+			}
+			if(false)
+				$("#myBox").show();
+			
+			$("input.login").live("keydown",function(e){
+				if(e.keyCode==13){
+					e.preventDefault();
+					$("#mainForm\\:submitLogin").click();
+				}
+			});
+		  
+		});
+		
+		</script><div id="mainForm:loginView">
+
+			<div id="myRollover1" style="display: none;">
+
+				<h1 id="myclipperModuleRollover">Toggle the box</h1>
+
+				<div id="myBox" style="display: none;">
+					<div class="myclipperModuleBody">
+						<div style="text-align: left; font-weight: bold; padding-top: 5px;">
+							<p>Secure Login</p>
+						</div>
+						<div style="text-align: left;">
+							<label>Email Address:</label>
+						</div><input id="mainForm:username" type="text" name="mainForm:username" value="sallypyuen@gmail.com" class="login">
+						<div style="text-align: left;">
+							<label>Password:</label>
+						</div><input id="mainForm:password" type="password" name="mainForm:password" value="" class="login">
+						<p class="formSmall">
+							<a href="https://www.clippercard.com/ClipperCard/forgottenPassword.jsf" style="color: white;" title="Forgot your password?">Forgot your password?</a>
+						</p><span id="mainForm:renderError"></span><input id="mainForm:submitLogin" type="submit" name="mainForm:submitLogin" value="Login" class="buttonLogin" onclick="mojarra.ab(this,event,&#39;action&#39;,&#39;mainForm:username mainForm:password&#39;,&#39;mainForm:renderError&#39;);return false">
+					</div>
+					<!-- END MY CLIPPER MODULE -->
+					<div class="myclipperModuleBodyBottom"></div>
+				</div>
+			</div>
+			<div id="myRollover2" style="">
+
+				<h1 id="myclipperLoggedIn">Toggle the box</h1>
+
+				<div id="myLoggedInBox" style="display: none;">
+					<div class="myclipperModuleBody">	
+						<ul>
+							<li><a href="https://www.clippercard.com/ClipperCard/dashboard.jsf">Manage account</a></li>
+							<li><a href="https://www.clippercard.com/ClipperCard/dashboard.jsf">Check my balance</a></li>
+							<li><a href="https://www.clippercard.com/ClipperCard/checkout.jsf#" onclick="mojarra.jsfcljs(document.getElementById(&#39;mainForm&#39;),{&#39;mainForm:j_idt45&#39;:&#39;mainForm:j_idt45&#39;},&#39;&#39;);return false">Add value</a></li>
+							<li><a href="https://www.clippercard.com/ClipperCard/checkout.jsf#" onclick="mojarra.jsfcljs(document.getElementById(&#39;mainForm&#39;),{&#39;mainForm:j_idt47&#39;:&#39;mainForm:j_idt47&#39;},&#39;&#39;);return false">Replace my card</a></li>
+							<li><a href="https://www.clippercard.com/ClipperWeb/damagedCard.do">Support</a></li>
+							<li><a href="https://www.clippercard.com/ClipperCard/logout.jsf">Log Out</a></li>
+						</ul>
+					</div>
+					<!-- END MY CLIPPER MODULE -->
+					<div class="myclipperModuleBodyBottom"></div>
+				</div>
+
+
+			</div></div>
+	</div>
+
+	<!-- /end #header -->
+				</div>
+				<div id="leftNav">
+
+	<script type="text/javascript">
+	$(function(){
+		//get the request url, find the a with the href = request url and apply style navSelected to parent li
+		//remove navSelected from any other li values that have it	
+		var url = window.location.href;
+		var endIdx = url.indexOf("?",0);
+		var page = url.substring(url.lastIndexOf("/")+1,endIdx==-1?url.length:endIdx);
+		endIdx = document.referrer.indexOf("?",0);
+		var source =  document.referrer.substring(document.referrer.lastIndexOf("/")+1,endIdx==-1?document.referrer.length:endIdx);
+		
+		
+		// added this to show left nav Auotload information box - Indira		
+		var isShowAutoloadBox = true;
+		if(page=="order.jsf" || (page =="manage.jsf" && isShowAutoloadBox )){			
+			$("#leftnavAutoloadInfoBox").show();
+		}else{			
+			$("#leftnavAutoloadInfoBox").hide();
+		}
+		
+		
+		//Exception cases 
+		if(page == "cardHistory.jsf")
+			page = "dashboard.jsf";
+		else if(page == "checkout.jsf" && source == "order.jsf")
+			page = "order.jsf";
+		else if(page == "checkout.jsf" && source == "manage.jsf")
+			page = "manage.jsf"
+		else if(page == "passwordChangeSuccessful.jsf")
+			page = "changePassword.jsf"	
+		else if(page == "lostStoleConfirmation.jsf")
+			page = "lostCard.jsf";
+		
+		//end exception cases
+		
+		$("#leftNavModule li").removeClass("navSelected");
+		$("#leftNavModule li[name='" + page + "']").addClass("navSelected").parent().addClass("navSelected");
+		
+		if("true" == "true")
+			$("#logOff").show();
+		else
+			$("#logOff").hide();
+	});
+	</script>
+	
+	<div id="leftNav">
+		<ul id="leftNavModule" class="navSelected">			
+					<li id="myAccount" class="" name="dashboard.jsf"><a href="https://www.clippercard.com/ClipperCard/dashboard.jsf" title="My Account">My Account</a></li>
+					<li id="orderCard" name="order.jsf"><a href="https://www.clippercard.com/ClipperCard/checkout.jsf#" onclick="mojarra.jsfcljs(document.getElementById(&#39;mainForm&#39;),{&#39;mainForm:j_idt54&#39;:&#39;mainForm:j_idt54&#39;},&#39;&#39;);return false">Order New Card</a></li>
+					<li id="addValue" name="manage.jsf" class="navSelected"><a href="https://www.clippercard.com/ClipperCard/checkout.jsf#" onclick="mojarra.jsfcljs(document.getElementById(&#39;mainForm&#39;),{&#39;mainForm:j_idt56&#39;:&#39;mainForm:j_idt56&#39;},&#39;&#39;);return false">Add Value to Card</a></li>
+					<li id="registerCard" name="register.jsf"><a href="https://www.clippercard.com/ClipperCard/checkout.jsf#" onclick="mojarra.jsfcljs(document.getElementById(&#39;mainForm&#39;),{&#39;mainForm:j_idt58&#39;:&#39;mainForm:j_idt58&#39;},&#39;&#39;);return false">Register a Card</a></li>
+							
+					<li id="editProfile" name="editProfile.jsf"><a href="https://www.clippercard.com/ClipperCard/editProfile.jsf" title="Edit Profile Information">Profile Information</a></li>
+							<li id="editPayment" name="editPayment.jsf"><a href="https://www.clippercard.com/ClipperCard/checkout.jsf#" onclick="mojarra.jsfcljs(document.getElementById(&#39;mainForm&#39;),{&#39;mainForm:j_idt346&#39;:&#39;mainForm:j_idt346&#39;},&#39;&#39;);return false">Payment Information</a></li>					
+					<li id="lostCard" name="lostCard.jsf"><a href="https://www.clippercard.com/ClipperCard/lostCard.jsf" title="Report Lost, Stolen or Damaged Card">Report Lost, Stolen or Damaged Card</a></li>
+					<li id="unregisterCard" name="unregister.jsf"><a href="https://www.clippercard.com/ClipperCard/checkout.jsf#" onclick="mojarra.jsfcljs(document.getElementById(&#39;mainForm&#39;),{&#39;mainForm:j_idt64&#39;:&#39;mainForm:j_idt64&#39;},&#39;&#39;);return false">Unregister Card</a></li>
+					<li id="changePassword" name="changePassword.jsf"><a href="https://www.clippercard.com/ClipperCard/changePassword.jsf" title="Change Password">Change Password</a></li>
+					<li id="customerSupport" name="customerSupport.jsf"><a href="https://www.clippercard.com/ClipperWeb/damagedCard.do" title="Customer Support">Customer Support</a></li>
+					<li id="logOff" style=""><a href="https://www.clippercard.com/ClipperCard/checkout.jsf#" onclick="mojarra.jsfcljs(document.getElementById(&#39;mainForm&#39;),{&#39;mainForm:j_idt66&#39;:&#39;mainForm:j_idt66&#39;},&#39;&#39;);return false">Log Out</a></li>	
+			
+		</ul>
+		<ul id="leftNavModuleEnd">
+			<li> </li>
+		</ul>
+		
+		<div id="leftnavAutoloadInfoBox" style="display: none;">
+			<a href="https://www.clippercard.com/ClipperWeb/getTranslinkRegisterForAutoloadInfo.do" target="_blank"><img src="./New Card Order_files/useClipperAutoload.jpg.jsf"></a>
+		</div>
+	</div>
+				</div>
+				<div id="mainContent">
+			<script type="text/javascript">
+				function verifyAcceptTerms(){
+					var goodToGo = $("#acceptTaC").attr("checked");
+					if(!goodToGo)
+						$("#tocError").show();
+					else
+						$("#mainForm\\:placeorder").attr("disabled","disabled");
+					
+					return goodToGo;
+				}
+			</script><input type="hidden" name="mainForm:j_idt71" value="0">
+			<span id="loggedInSpan" style="display:none">true</span><span id="mainForm:fullCheckoutPanel">
+	
+						
+						<div id="mainContent">
+							<div class="prop500"></div>
+							<div class="contentSubHeader">
+								<p>Order Confirmation</p>
+							</div>
+							<p align="justify">Thank you for placing your order with Clipper.</p>
+							<p align="justify">This page is your receipt. Please print a copy for your records.</p>
+							<p align="justify">When you add value to your Clipper card online, it can take up to 5 days for the value to be available for transfer to your card.  
+							Once the value is available, you must tag your card to a card reader to load the value to your card. Once this step is completed, your card balance will be updated.</p>
+							<p align="justify">Please be advised that your order may include items that do not require immediate payment.</p>
+	
+							
+							<div class="greyBox topBorder">
+								<table style="font-size:.75em">
+										<tbody><tr>
+											<td>Serial Number:</td>
+											<td>1204217664</td>
+										</tr>
+									<tr>
+										<td>Order Date:</td>
+										<td>07/05/2015</td>
+									</tr>
+									<tr>
+										<td>Reference Number:</td>
+										<td>20573379</td>
+									</tr>
+									<tr>
+										<td style="padding-right: 7px">Authorization Number:</td>
+										<td>023918</td>
+									</tr>
+									<tr>
+										<td>Type of Payment:</td>
+										<td>visa</td>
+									</tr>
+									<tr>
+										<td>Credit Card Number:</td>
+										<td>XXXX-XXXX-XXXX-8947</td>
+									</tr>
+								</tbody></table>
+								<input id="print" class="button69" value="Print" type="button" onclick="window.print()">
+	
+							</div>
+							<div class="spacer"></div>
+						</div>
+						</span>
+				</div>
+				<div id="rightCol216">
+
+	<!--BLUE BOX--><span id="mainForm:shoppingCartContainer">
+		<div id="blueBox">
+			<div class="boxHeader">
+				<div class="title">
+					<div id="newCard" class="blueBoxTitle">
+						Order Summary
+					</div>
+				</div>
+			</div>
+			
+			<div class="boxBody"><span id="mainForm:pnlErr" style="color:red"></span><span id="mainForm:productsOnCardGroup">
+							<p class="bodyText">Products already on this card:</p>
+						<div class="cart" id="existingCart">
+							
+						</div></span>
+					<hr>
+				<span style="color: red; font-size: .75em;">
+				</span>
+					<p class="bodyText">New products added to this card:</p>
+				<div id="shoppingCart" class="cart">
+						<div class="itemName">Cash value</div>
+						<div class="itemValue">$8.60</div>
+
+						<div class="clear"></div>
+						<div class="itemDescription">
+						</div>
+						<div class="clear"></div>
+						<div class="spacer10"></div>
+				</div>
+				<div>
+					<hr>
+				</div>
+				
+				<div class="total">
+					<div style="float: left;">Total Order Amount:</div>
+					<div id="totalOrder" class="totalAmount">$8.60</div>
+
+					<div class="clear"></div>
+				</div><span id="mainForm:immediatePayment1" style="margin-top: 10px;">
+					
+					 <p class="disclaimer">When you order value online, it can take up
+						to five days for the value to be available to load on your card.
+						When setting up Autoload, it may take up to five days to take
+						effect with a credit card and up to ten business days with a bank
+						account.</p></span>
+				<div class="clear">&nbsp;</div>
+			</div>
+			<div class="boxFooter"></div><div id="mainForm:pnlNewEcashVal" style="display:none"><input id="mainForm:newEcashAmtVal" type="text" name="mainForm:newEcashAmtVal" value="0.0" style="text-align:right;"><input id="mainForm:changeAutoloadCash" type="submit" name="mainForm:changeAutoloadCash" value="" onclick="mojarra.ab(this,event,&#39;action&#39;,&#39;mainForm:pnlNewEcashVal&#39;,&#39;mainForm:pnlErr&#39;);return false"></div><div id="mainForm:pnlNewParkingPurseVal" style="display:none"><input id="mainForm:newParkingPurseAmtVal" type="text" name="mainForm:newParkingPurseAmtVal" value="0.0" style="text-align:right;"><input id="mainForm:changeAutoloadParkingPurse" type="submit" name="mainForm:changeAutoloadParkingPurse" value="" onclick="mojarra.ab(this,event,&#39;action&#39;,&#39;mainForm:pnlNewParkingPurseVal&#39;,&#39;mainForm:pnlErr&#39;);return false"></div>
+			
+		</div></span>
+	
+	
+	
+	<!--END BLUE BOX-->
+	
+	<script type="text/javascript">
+		$(function(){
+			var curDisableLnk = null;
+			$('#dialogChangeAutoloadAmt').keyup(function(e) {
+			    if (e.keyCode == 13) {
+			    	SubmitEcashChangeAmt();
+			    }
+			});
+			
+			$('#dialogChangeAutoloadParkingPurseAmt').keyup(function(e) {
+			    if (e.keyCode == 13) {
+			    	//alert("eneterd amount");
+			    	SubmitParkingPurseChangeAmt();
+			    }
+			});
+			
+			$("#dialogChangeAutoloadAmt").dialog({
+				autoOpen:false,
+				width:450,
+				modal:true,
+				resizable:false,
+				buttons: 
+				{
+					"Save":function(){
+						SubmitEcashChangeAmt();
+					},
+					"Cancel":function(){
+						$(this).dialog("close");
+					}
+				}
+			})
+			
+			$("#dialogChangeAutoloadParkingPurseAmt").dialog({
+				autoOpen:false,
+				width:450,
+				modal:true,
+				resizable:false,
+				buttons: 
+				{
+					"Save":function(){
+						SubmitParkingPurseChangeAmt();
+					},
+					"Cancel":function(){
+						$(this).dialog("close");
+					}
+				}
+			})
+			
+			$("#changeAutoloadAmt").live("click",function(){
+				$("#newEcashAmt").val("");
+				$("#dialogChangeAutoloadAmt").dialog("open");
+			})
+			
+			$("#changeAutoloadParkingPurseAmt").live("click",function(){
+				$("#newParkingPurseAmt").val("");
+				$("#dialogChangeAutoloadParkingPurseAmt").dialog("open");
+			})
+
+			$("#mainForm\\:shoppingCartContainer").load(function(){alert('hit')})
+			
+			$("#dialogConfirmDisableAutoload").dialog({
+				autoOpen:false,
+				resizable:false,
+				modal:true,
+				width:250,
+				buttons:{
+					"Yes": function()
+					{
+						$("#" + curDisableLnk).next().click();
+						$("#" + curDisableLnk).next().remove();
+						$("#" + curDisableLnk).remove();
+						$(this).dialog("close")
+					},
+					"No": function()
+					{
+						$(this).dialog("close")
+					}
+				},
+				beforeClose: function(){
+					curDisableLnk = null;
+				}
+			});
+			$("span.disableAutoloadSpan").click(function(){
+				curDisableLnk = $(this).attr("id");
+				$("#dialogConfirmDisableAutoload").dialog("open");
+			});
+		})
+		
+		function SubmitEcashChangeAmt(){
+			$("#dialogChangeAutoloadAmt").dialog("close");
+			$("#mainForm\\:newEcashAmtVal").val($("#newEcashAmt").val())
+			$("#mainForm\\:changeAutoloadCash").click();
+		}
+		function SubmitParkingPurseChangeAmt(){
+			$("#dialogChangeAutoloadParkingPurseAmt").dialog("close");
+			$("#mainForm\\:newParkingPurseAmtVal").val($("#newParkingPurseAmt").val())
+			$("#mainForm\\:changeAutoloadParkingPurse").click();
+			//alert("in the subitparkingpurche amount function");
+		}
+	</script>
+				</div>
+				<div id="footer">
+						<div id="newsFooter">
+							<div class="customerServiceBox">
+								Clipper Customer <br> Service Center
+							</div>
+							<div class="box">
+								<p>
+									<span class="title">Phone:</span> <span class="skype_c2c_print_container notranslate">877.878.8883</span><span id="skype_c2c_container" class="skype_c2c_container notranslate" dir="ltr" tabindex="-1" onmouseover="SkypeClick2Call.MenuInjectionHandler.showMenu(this, event)" onmouseout="SkypeClick2Call.MenuInjectionHandler.hideMenu(this, event)" onclick="SkypeClick2Call.MenuInjectionHandler.makeCall(this, event)" data-numbertocall="+18778788883" data-numbertype="tollfree" data-isfreecall="true" data-isrtl="false" data-ismobile="false"><span class="skype_c2c_highlighting_inactive_common" dir="ltr" skypeaction="skype_dropdown"><span class="skype_c2c_textarea_span" id="free_num_ui"><img width="0" height="0" class="skype_c2c_logo_img" src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/call_skype_logo.png"><span class="skype_c2c_text_span">877.878.8883</span><span class="skype_c2c_free_text_span">&nbsp;FREE</span></span></span></span> <br> <span class="title">Fax:</span> 925.686.8221
+								</p>
+							</div>
+							<div class="box middle">
+								<p>
+									<span class="title">TDD/TTY:</span> 711 or <span class="skype_c2c_print_container notranslate">800.735.2929</span><span id="skype_c2c_container" class="skype_c2c_container notranslate" dir="ltr" tabindex="-1" onmouseover="SkypeClick2Call.MenuInjectionHandler.showMenu(this, event)" onmouseout="SkypeClick2Call.MenuInjectionHandler.hideMenu(this, event)" onclick="SkypeClick2Call.MenuInjectionHandler.makeCall(this, event)" data-numbertocall="+18007352929" data-numbertype="tollfree" data-isfreecall="true" data-isrtl="false" data-ismobile="false"><span class="skype_c2c_highlighting_inactive_common" dir="ltr" skypeaction="skype_dropdown"><span class="skype_c2c_textarea_span" id="free_num_ui"><img width="0" height="0" class="skype_c2c_logo_img" src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/call_skype_logo.png"><span class="skype_c2c_text_span">800.735.2929</span><span class="skype_c2c_free_text_span">&nbsp;FREE</span></span></span></span> <br>
+									<span class="title">Email:</span> <a href="mailto:custserv@clippercard.com">custserv@clippercard.com</a>
+								</p>
+							</div>
+							<div class="box">
+								<p>
+									<span class="title">M - F:</span> 6 a.m. - 8 p.m. <br> <span class="title">Sat - Sun:</span> 8 a.m. - 5 p.m.
+								</p>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div id="footermain">
+							<div id="footerLogo">
+								<a class="logo" href="http://www.511.org/" target="_new">Clipper</a>
+							</div>	
+							<div class="listHolder">
+							
+								<ul>
+									<li><a href="https://www.clippercard.com/ClipperWeb/es/index.do">Espanol</a></li>
+									<li><a href="https://www.clippercard.com/ClipperWeb/zh/index.do"><img src="./New Card Order_files/chineseFooter.jpg.jsf" border="0"></a></li>
+								</ul>
+								<div id="accessibility">
+									<div class="icon">
+										<img src="./New Card Order_files/icon_accessibility.png.jsf">
+									</div>
+									<div class="text">
+										<a href="https://www.clippercard.com/ClipperWeb/accessibility.do">Accessibility</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="listHolder">
+								<ul>
+									<li><a href="https://www.clippercard.com/ClipperWeb/privacy.do">Privacy</a></li>
+									<li><a href="https://www.clippercard.com/ClipperWeb/faq.do">FAQ</a></li>
+									<li><a href="https://www.clippercard.com/ClipperWeb/pressRoom.do">Media</a></li>
+									<li><a href="https://www.clippercard.com/ClipperWeb/download.do">Forms</a></li>
+									<li><a href="https://www.clippercard.com/ClipperWeb/agreement.do">Cardholder Agreement</a></li>
+									<li><a href="https://www.clippercard.com/ClipperWeb/downloads/Clipper_terms_of_use_11.14.12.pdf" target="_new">Website Terms of Use</a></li>
+									<li><a href="https://www.clippercard.com/ClipperWeb/sitemap.do">Site Map</a></li>
+									<li><a href="https://www.clippercard.com/ClipperCard/contactUs.jsf">Contact Us</a></li>
+								</ul>
+								
+							</div>
+							 <div class="listHolder">
+            					<ul>
+            						<li class="socialIcons"><a target="_new" href="http://www.facebook.com/BayAreaClipper"><img src="./New Card Order_files/icon_facebook.png.jsf"></a></li>
+                					<li class="socialIcons"><a target="_new" href="http://twitter.com/bayareaclipper"><img src="./New Card Order_files/icon_twitter.png.jsf"></a></li>
+                					<li class="socialIcons"><a target="_new" href="https://www.youtube.com/channel/UCtpEI_08Af5ffdSrPEY08BQ"><img src="./New Card Order_files/icon_youtube.png.jsf" height="20" width="50"></a></li>
+            					</ul>            
+            					</div>
+							<div class="clear"></div>
+						</div>
+						<!-- END footermain -->
+				</div>
+			</div>
+			<div id="bottomShadow">&nbsp;</div>
+		</div>
+		<div id="copyright">
+			<p>©2014 Metropolitan Transportation Commission</p>
+		</div><script language="javascript" type="text/javascript">//<![CDATA[
+function faceletsDebug(URL) { day = new Date(); id = day.getTime(); eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=800,height=600,left = 240,top = 212');"); };var faceletsOrigKeyup = document.onkeyup; document.onkeyup = function(e) { if (window.event) e = window.event; if (String.fromCharCode(e.keyCode) == 'D' & e.shiftKey & e.ctrlKey) faceletsDebug('/ClipperCard/checkout.jsf?facelets.ui.DebugOutput=1435761949360'); else if (faceletsOrigKeyup) faceletsOrigKeyup(e); };
+//]]>
+</script>
+		<script type="text/javascript">
+			function notAlreadyProcessing(){
+				!$("#loadingIcon").is(":visible")
+			}
+		</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-9184917898443348730:-1259392046860180164" autocomplete="off">
+</form>
+	<div id="loadingIcon" style="display: none;">
+		<img src="./New Card Order_files/loadSpin.gif.jsf">
+	</div>
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable" tabindex="-1" role="dialog" aria-describedby="dialogChangeAutoloadAmt" aria-labelledby="ui-id-1" style="display: none;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title">Change Clipper Cash Autoload Amount</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div><div id="dialogChangeAutoloadAmt" style="" class="ui-dialog-content ui-widget-content">
+		New Amount: <input style="text-align:right" id="newEcashAmt">
+	</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Save</span></button><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Cancel</span></button></div></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable" tabindex="-1" role="dialog" aria-describedby="dialogChangeAutoloadParkingPurseAmt" aria-labelledby="ui-id-2" style="display: none;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-2" class="ui-dialog-title">Change Clipper Parking value Autoload Amount</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div><div id="dialogChangeAutoloadParkingPurseAmt" style="" class="ui-dialog-content ui-widget-content">
+		New Amount: <input style="text-align:right" id="newParkingPurseAmt">
+	</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Save</span></button><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Cancel</span></button></div></div></div><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-dialog-buttons ui-draggable" tabindex="-1" role="dialog" aria-describedby="dialogConfirmDisableAutoload" aria-labelledby="ui-id-3" style="display: none;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-3" class="ui-dialog-title">Confirm</span><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close" role="button" aria-disabled="false" title="close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span class="ui-button-text">close</span></button></div><div id="dialogConfirmDisableAutoload" style="font-size:.8em; text-align:left;" class="ui-dialog-content ui-widget-content">
+				Are you sure you want to disable Autoload?
+	</div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Yes</span></button><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">No</span></button></div></div></div><div class="skype_c2c_menu_container notranslate" id="skype_c2c_menu_container" onmouseover="SkypeClick2Call.MenuInjectionHandler.showMenu(this, event)" onmouseout="SkypeClick2Call.MenuInjectionHandler.hideMenu(this, event)" data-fp="{0466DD9A-8BB0-443D-8C48-8801EC295542}" data-murl="https://pipe.skype.com/Client/2.0/" data-p2murl="https://c2c-p2m-secure.skype.com/p2m/v1/push" data-uiid="1" data-uilang="en" style="display: none;"><div class="skype_c2c_menu_click2call"><a class="skype_c2c_menu_click2call_action" id="skype_c2c_menu_click2call_action" target="_self">Call</a></div><div class="skype_c2c_menu_click2sms"><a class="skype_c2c_menu_click2sms_action" id="skype_c2c_menu_click2sms_action" target="_self">Send SMS</a></div><div class="skype_c2c_menu_push_to_mobile"><a class="skype_c2c_menu_push_to_mobile_action" id="skype_c2c_menu_push_to_mobile_action" target="_blank">Call from mobile</a></div><div class="skype_c2c_menu_add2skype"><a class="skype_c2c_menu_add2skype_text" id="skype_c2c_menu_add2skype_text" target="_self">Add to Skype</a></div><div class="skype_c2c_menu_toll_info"><span class="skype_c2c_menu_toll_callcredit">You'll need Skype Credit</span><span class="skype_c2c_menu_toll_free">Free via Skype</span></div></div></body></html>
