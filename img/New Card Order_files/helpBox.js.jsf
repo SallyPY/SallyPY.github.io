@@ -1,2 +1,0 @@
-function resetHelp(){$('div.helpToggle').removeClass('helpToggleActive');$('div.helpToggle').addClass('helpToggleInactive');$('div.helpContainer').hide();}
-function showHelp(helpBox,caller){if($(caller).hasClass('helpToggleActive')){$(caller).toggleClass('helpToggleActive');$(caller).toggleClass('helpToggleInactive');resetHelp();}else{resetHelp();$(caller).toggleClass('helpToggleActive');$(caller).toggleClass('helpToggleInactive');$('#'+helpBox).css('margin-top',$(caller).offset().top-$('#'+helpBox).parent().offset().top);$('#'+helpBox).show();}}
